@@ -1,17 +1,19 @@
 <template>
+  <NuxtLayout>
   <v-layout class="rounded rounded-md">
     <v-app-bar title="Application bar"></v-app-bar>
     
-    <!-- <v-navigation-drawer>
+    <v-navigation-drawer>
       <v-list>
-        <v-list-item title="Navigation drawer"></v-list-item>
+        <v-list-item title="Home" to="/" />
+        <v-list-item title="Test" to="/test" />
       </v-list>
-    </v-navigation-drawer> -->
+    </v-navigation-drawer>
     
     <v-main class="d-flex align-center justify-center" style="min-height: 300px;">
-      Main Content
       <NuxtRouteAnnouncer />
+      <NuxtPage />
     </v-main>
   </v-layout>
-  <NuxtPage />
+</NuxtLayout>
 </template>
